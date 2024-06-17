@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras para namorar o Hiagas</title>
+    <style>
+        /* Estilo para o corpo da página */
+        body, html {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333; /* Cor do texto principal */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Altura mínima da tela inteira */
+            background-image: url('https://wallpaper.forfun.com/fetch/c6/c6871a7e988241df760dabb4e37af820.jpeg');
+            background-size: cover; /* Cobrir toda a área do body */
+            background-repeat: no-repeat; /* Não repetir a imagem */
+            background-position: center; /* Centralizar a imagem */
+        }
+
+        /* Estilo para o conteúdo da página */
+        .conteudo {
+            background-color: rgba(8, 6, 6, 0.8); /* Fundo branco para o conteúdo com transparência */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 100%; /* Ocupa toda a largura disponível */
+            max-width: 800px; /* Largura máxima para não ficar muito largo */
+            overflow: hidden; /* Esconde barras de rolagem horizontais */
+        }
+
+        /* Estilo para o cabeçalho */
+        h1 {
+            text-align: center;
+            margin-bottom: 30px; /* Espaçamento maior abaixo do título */
+            color: #fff; /* Cor branca para o título */
+            text-transform: uppercase; /* Transforma o texto em maiúsculas */
+            letter-spacing: 2px; /* Espaçamento entre letras */
+        }
+
+        /* Estilo para a lista */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Estilo para cada item da lista */
+        li {
+            background-color: #f9f9f9; /* Fundo cinza claro */
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.3s ease; /* Transição suave adicionada */
+            position: relative; /* Para ajustar o pseudo-elemento */
+            display: flex;
+            align-items: center;
+            cursor: pointer; /* Cursor apontando ao passar o mouse */
+        }
+
+        /* Efeito de hover nos itens */
+        li:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Estilo para itens marcados como concluídos */
+        .concluido {
+            text-decoration: line-through;
+            color: #555;
+        }
+
+        /* Estilo para as marcas de verificação */
+        .marca {
+            position: absolute;
+            right: 10px;
+            font-size: 20px;
+            color: transparent; /* Cor inicial transparente */
+            transition: color 0.2s ease-in-out;
+        }
+
+        /* Mudança de cor ao passar o mouse sobre as marcas */
+        .marca:hover {
+            color: black; /* Cor mais escura ao passar o mouse */
+        }
+        
+        /* Estilo para os itens marcados */
+        .marcado .marca {
+            color: rgb(34, 160, 34); /* Cor verde forte para o símbolo marcado */
+        }
+
+        /* Estilo para os itens marcados */
+        .marcado {
+            background-color: green; /* Cor de fundo verde suave para itens marcados */
+        }
+    </style>
+</head>
+<body>
+    <!-- Conteúdo da página -->
+    <div class="conteudo">
+        <h1>Regras para namorar o Hiagas</h1>
+        <ul id="lista-tarefas">
+            <li>Não pode conversar com outros por mensagem <span class="marca">✓</span></li>
+            <li>Não pode ter amigos <span class="marca">✓</span></li>
+            <li>Não curtir fotos de homens <span class="marca">✓</span></li>
+            <li>Não ter crush em famoso <span class="marca">✓</span></li>
+            <li>Comprimentar outro homem apenas com aperto de mão <span class="marca">✓</span></li>
+            <li>Não pode sair de casa sem avisar <span class="marca">✓</span></li>
+            <li>Não postar foto sexualizando corpo <span class="marca">✓</span></li>
+            <li>Não falar igual um marginal de São Paulo ou Rio de Janeiro <span class="marca">✓</span></li>
+            <li>Não fumar ou beber <span class="marca">✓</span></li>
+            <li>Não ir em baladas festinhas <span class="marca">✓</span></li>
+            <li>Não pode ter contato com alguém que já ficou ou já teve interesse <span class="marca">✓</span></li>
+            <li>Não seguir homens que não conhece <span class="marca">✓</span></li>
+            <li>Bloquear pessoas que dão em cima de você <span class="marca">✓</span></li>
+            <li>Não usar roupa vulgar quando for sair comigo <span class="marca">✓</span></li>
+            <li>Não pode ter amigas "puta" <span class="marca">✓</span></li>
+            <li>Não pode dançar funk <span class="marca">✓</span></li>
+            <li>Não pode ser rodada <span class="marca">✓</span></li>
+            <li>Não pode ser petista <span class="marca">✓</span></li>
+            <li>Não pode ser feminista <span class="marca">✓</span></li>
+            <li>Não pode ser GORDA <span class="marca">✓</span></li>
+            <li>Não pode ser palito <span class="marca">✓</span></li>
+            <li>Não pode ser fedida <span class="marca">✓</span></li>
+            <li>Não pode ser depressiva <span class="marca">✓</span></li>
+            <li>Não ser muito burra <span class="marca">✓</span></li>
+            <li>Ter planejamento de vida <span class="marca">✓</span></li>
+            <li>Ser mais baixa que eu <span class="marca">✓</span></li>
+            <li>Tem que treinar <span class="marca">✓</span></li>
+            <li>Ser educada com as pessoas <span class="marca">✓</span></li>
+            <li>Ser esforçada <span class="marca">✓</span></li>
+            <li>Respeitar os pais <span class="marca">✓</span></li>
+            <li>Saber o básico para cuidar de uma casa <span class="marca">✓</span></li>
+            <li>Ser uma mulher de valor <span class="marca">✓</span></li>
+            <li>Ter ética <span class="marca">✓</span></li>
+            <li>Ser carinhosa <span class="marca">✓</span></li>
+            <li>Falar o que sente <span class="marca">✓</span></li>
+            <li>Falar o que incomoda <span class="marca">✓</span></li>
+            <li>Se vestir bem <span class="marca">✓</span></li>
+        </ul>
+    </div>
+
+    <!-- Script para marcar itens da lista -->
+    <script>
+        // Seleciona todos os itens da lista
+        const itensLista = document.querySelectorAll('#lista-tarefas li');
+
+        // Adiciona um evento de clique a cada item da lista
+        itensLista.forEach(item => {
+            item.addEventListener('click', () => {
+                // Toggle da classe 'marcado' para alternar o estilo
+                item.classList.toggle('marcado');
+            });
+        });
+    </script>
+</body>
+</html>
